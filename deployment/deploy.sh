@@ -10,7 +10,7 @@ echo "Current branch: ${git_branch}"
 
 echo "Deploying the current branch \"${git_branch}\" to AWS"
 
-if [[ "${git_branch}" == "develop" ]]; then
+if [[ "${git_branch}" == "fix-watch" ]]; then
 	vm_host="ec2-user@ec2-44-202-53-114.compute-1.amazonaws.com"
 else
 	echo "Not deployment configuration found for branch: ${git_branch}"
